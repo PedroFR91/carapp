@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import MclarenCarImg from '../../../assets/images/mclaren-orange-big.png';
 import BlobImg from '../../../assets/images/blob.svg';
 import { SCREENS } from '../../components/responsive';
+import { Button } from '../../components/button';
 const TopSectionContainer = styled.div`
   min-height: 400px;
   margin-top: 6em;
@@ -128,6 +129,12 @@ const StandaloneCar = styled.div`
     top: -9em;
   }
 `;
+const ButtonsContainer = styled.div`
+  ${tw`
+  flex
+  mt-3
+  `}
+`;
 export function TopSection() {
   return (
     <TopSectionContainer>
@@ -137,6 +144,10 @@ export function TopSection() {
           Nuestros vehículos de las marcas más prestigiosas y reconocidas le
           conducirán durante sus vacaciones.
         </Description>
+        <ButtonsContainer>
+          <Button text='Reserva tu coche' />
+          <Button theme='filled' text='Vende tu coche' />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
