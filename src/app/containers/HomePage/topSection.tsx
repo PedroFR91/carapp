@@ -132,6 +132,7 @@ const StandaloneCar = styled.div`
 const ButtonsContainer = styled.div`
   ${tw`
   flex
+  flex-wrap
   mt-3
   `}
 `;
@@ -145,7 +146,7 @@ export function TopSection() {
           conducirán durante sus vacaciones.
         </Description>
         <ButtonsContainer>
-          <Button text='Reserva tu coche' />
+          <Button text='Reserva tu viaje' />
           <Button theme='filled' text='Vende tu coche' />
         </ButtonsContainer>
       </LeftContainer>
